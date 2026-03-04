@@ -1,0 +1,17 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "gcc-15.2.0-wsl-x86_64-linux-gnu",
+            "displayName": "GCC 15.2 x86_64-linux-gnu",
+            "description": "Using compilers: C = /usr/local/bin/gcc, CXX = /usr/local/bin/g++",
+            "binaryDir": "${sourceDir}/out/build",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "/usr/local/bin/gcc",
+                "CMAKE_CXX_COMPILER": "/usr/local/bin/g++",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        }
+    ]
+}
